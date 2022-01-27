@@ -36,15 +36,19 @@ header {
 Body
 
 ==========================*/
-main{
-  .secone {
-    padding: 5px 0;
-  }
+header{
+.banner {
+  background-size: cover;
+  min-height: 500px;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  background-color: #3b3838;
+}
   .banner::after{
     content: "";
-    background:url(./img/banner-bg.png) bottom center no-repeat;
-    background-size: cover;
-    min-height: 500px;
+    background: url(./img/banner-bg.png) bottom center no-repeat;
     opacity: .33;
     top: 0;
     left: 0;
@@ -54,22 +58,15 @@ main{
     z-index: -1;
   }
     .logo {
-      padding: 5px .5px;
+      padding: 48px 16px;
     }
 
   .btn {
   	.btn();
   }
+}
 
-  .banner {
-    background-size: cover;
-    min-height: 400px;
-    text-align: center;
-  }
-    .logo {
-      padding: 2px .5px;
-  }
-
+main {
   p {
     .p();
   }
