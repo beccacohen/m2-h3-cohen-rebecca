@@ -1,69 +1,85 @@
-@import "./variables.less";
+@import url('variables.less');
+@import url('mixins.less');
 
-* {
-  margin: 0;
+
+html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container-fluid {
   padding: 0;
-  border: 0;
 }
 
-nav{
-  font-family: @font;
-  ul {
-    background-color: @yellow;
-    padding: 5px;
+/*=========================
+
+nav
+
+==========================*/
+header {
+  .nav{
+    font-family: @font;
+    color: @yellow;
   }
-  li {
-    display: inline-block;
-    font-weight: 400;
-  }
+    ul{
+      background-color: @yellow;
+      padding: 20px 0;
+      word-spacing: 3px;
+    }
+    li{
+      display: inline-block;
+      font-weight: 400;
+    }
+	}
+
+/*=========================
+
+Body
+
+==========================*/
+
+.banner::after{
+  content: "";
+  background:url(./img/banner-bg.png) bottom center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  opacity: .33;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
+  .logo {
+    padding: 3rem 1rem;
+  }
 
-
-
-button {
-  background-color: @yellow;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 8px;
-  color: #050500;
-  border: none;
-  width: 23%;
-  height: 13%;
+.btn {
+	.btn();
 }
 
 .banner {
-  width: 320px;
+  background-size: cover;
+  min-height: 400px;
+  text-align: center;
 }
   .logo {
-    width: 320px;
+    padding: 2px .5px;
+}
+
+p {
+  .p();
 }
 
 /*===========================
 
-Responsive Web Coding - 1366px by 768px (Laptop)
+footer
 
 ===========================*/
-
-@media screen and (min-width: 1000px) {
-.banner {
-  position: relative;
-  opacity: .33;
-  object-fit: cover;
+footer {
+  background: @black;
+  text-align: center;
+  border-top: 8px @yellow solid;
 }
-
-  .logo {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform : translate(-50%, -50%);
- }
-
-  .ordernow {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform : translate(-50%, -50%);
-    }
-  }
