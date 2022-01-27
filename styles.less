@@ -18,61 +18,62 @@ nav
 
 ==========================*/
 header {
-  .nav{
+    a {
+      text-decoration: none;
+    }
+  .nav-link {
+      .nav();
+    }
+  .navbar {
+		background-color: @yellow;
+		padding: 1rem 0;
     font-family: @font;
-    color: @yellow;
-  }
-    ul{
-      background-color: @yellow;
-      padding: 20px 0;
-      word-spacing: 3px;
-    }
-    li{
-      display: inline-block;
-      font-weight: 400;
-    }
-	}
+		}
+}
 
 /*=========================
 
 Body
 
 ==========================*/
+main{
+  .secone {
+    padding: 5px 0;
+  }
+  .banner::after{
+    content: "";
+    background:url(./img/banner-bg.png) bottom center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    opacity: .33;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+    .logo {
+      padding: 5px .5px;
+    }
 
-.banner::after{
-  content: "";
-  background:url(./img/banner-bg.png) bottom center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  opacity: .33;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-  .logo {
-    padding: 3rem 1rem;
+  .btn {
+  	.btn();
   }
 
-.btn {
-	.btn();
-}
+  .banner {
+    background-size: cover;
+    min-height: 400px;
+    text-align: center;
+  }
+    .logo {
+      padding: 2px .5px;
+  }
 
-.banner {
-  background-size: cover;
-  min-height: 400px;
-  text-align: center;
+  p {
+    .p();
+  }
 }
-  .logo {
-    padding: 2px .5px;
-}
-
-p {
-  .p();
-}
-
 /*===========================
 
 footer
