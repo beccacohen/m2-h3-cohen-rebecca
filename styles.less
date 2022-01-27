@@ -21,14 +21,28 @@ header {
     a {
       text-decoration: none;
     }
-  .nav-link {
-      .nav();
+  .navbar-light .navbar-nav .nav-link {
+      color: @black;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+      color: @red;
     }
   .navbar {
 		background-color: @yellow;
 		padding: 1rem 0;
     font-family: @font;
 		}
+    .navbar-light{
+      border-color: @font-color;
+    }
+
+    .navbar-light .navbar-nav #ordernow {
+      color: @red;
+      text-transform: uppercase;
+    }
+    .navbar-light .navbar-nav #ordernow:hover {
+      color: @black;
+    }
 }
 
 /*=========================
